@@ -20,7 +20,7 @@
 
 方法1.在命令行里输入：
 
-> $ python -m torch.distributed.launch --nproc_per_node=1 --nnodes=1 ddp_train.py 
+> $ python -m torch.distributed.launch --nproc_per_node=4 --nnodes=1 ddp_train.py 
 
 方法2.在命令行里输入：
 
