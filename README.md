@@ -20,16 +20,21 @@
 
 方法1.在命令行里输入：
 
-> $ python -m torch.distributed.launch --nproc_per_node=4 --nnodes=1 ddp_train.py 
+```
+$ python -m torch.distributed.launch --nproc_per_node=4 --nnodes=1 ddp_train.py 
+```
 
 方法2.在命令行里输入：
 
-> $ torchrun --standalone --nnodes=1 --nproc-per-node=4 ddp_train.py 
+```
+$ torchrun --standalone --nnodes=1 --nproc-per-node=4 ddp_train.py 
+```
 
 其中torchrun来自python库里的torch包：
 
-> (torchEnv) <font color=#23d18b>david@DAVID</font> : <font color=#348eea>~/pytorch-multi-gpu-training-master</font> $ whereis torchrun
->
-> torchrun: /home/david/anaconda3/envs/torchEnv/bin/torchrun
+```
+$ whereis torchrun
+torchrun: /home/david/anaconda3/envs/torchEnv/bin/torchrun
+```
 
 多节点请参考官方文档[ torchrun (Elastic Launch)](https://docs.pytorch.org/docs/stable/elastic/run.html)
